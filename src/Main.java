@@ -4,7 +4,6 @@ public class Main {
         Player player1 = new Player("Taro", new RandomStrategy());
         Player player2 = new Player("Hana", new GuuStrategy());
         for (int i = 0; i < 5; i++) {
-
             Hand nextHand1 = player1.nextHand();
             Hand nextHand2 = player2.nextHand();
             if (nextHand1.isStrongerThan(nextHand2)) {
